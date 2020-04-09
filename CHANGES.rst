@@ -15,6 +15,9 @@ Improvements:
  * Cross-signing: Complete security at the end of sign in process( #3003).
  * Make decoration uniform (#2972).
 
+Bug fix:
+ * Considered safe area insets for some screens (PR #3084).
+
 Changes in 0.10.5 (2020-04-01)
 ===============================================
 
