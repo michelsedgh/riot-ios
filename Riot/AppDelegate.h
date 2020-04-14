@@ -17,7 +17,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MatrixKit/MatrixKit.h>
-#import <UserNotifications/UserNotifications.h>
 
 #import "MasterTabBarController.h"
 #import "JitsiViewController.h"
@@ -42,10 +41,8 @@ extern NSString *const AppDelegateDidValidateEmailNotification;
 extern NSString *const AppDelegateDidValidateEmailNotificationSIDKey;
 extern NSString *const AppDelegateDidValidateEmailNotificationClientSecretKey;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, MXKCallViewControllerDelegate, UISplitViewControllerDelegate, UINavigationControllerDelegate, JitsiViewControllerDelegate, UNUserNotificationCenterDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, MXKCallViewControllerDelegate, UISplitViewControllerDelegate, UINavigationControllerDelegate, JitsiViewControllerDelegate>
 {
-    BOOL isPushRegistered;
-    
     // background sync management
     void (^_completionHandler)(UIBackgroundFetchResult);
 }
@@ -145,17 +142,6 @@ extern NSString *const AppDelegateDidValidateEmailNotificationClientSecretKey;
 #pragma mark - Matrix Accounts handling
 
 - (void)selectMatrixAccount:(void (^)(MXKAccount *selectedAccount))onSelection;
-
-#pragma mark - Push notifications
-
-- (void)registerUserNotificationSettings;
-
-/**
- Perform registration for remote notifications.
- 
- @param completion the block to be executed when registration finished.
- */
-- (void)registerForRemoteNotificationsWithCompletion:(void (^)(NSError *))completion;
 
 #pragma mark - Matrix Room handling
 
