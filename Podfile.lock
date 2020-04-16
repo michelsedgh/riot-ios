@@ -56,7 +56,6 @@ PODS:
     - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixKit/Core (= 0.11.4)
     - MatrixSDK (= 0.15.2)
-    - SwiftUTI (~> 1.0.6)
   - MatrixKit/AppExtension (0.11.4):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
@@ -64,14 +63,12 @@ PODS:
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixSDK (= 0.15.2)
-    - SwiftUTI (~> 1.0.6)
   - MatrixKit/Core (0.11.4):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixSDK (= 0.15.2)
-    - SwiftUTI (~> 1.0.6)
   - MatrixSDK (0.15.2):
     - MatrixSDK/Core (= 0.15.2)
   - MatrixSDK/Core (0.15.2):
@@ -93,14 +90,13 @@ PODS:
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
-  - Reusable (4.1.0):
-    - Reusable/Storyboard (= 4.1.0)
-    - Reusable/View (= 4.1.0)
-  - Reusable/Storyboard (4.1.0)
-  - Reusable/View (4.1.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
   - SwiftGen (6.1.0)
   - SwiftLint (0.36.0)
-  - SwiftUTI (1.0.7)
   - zxcvbn-ios (1.0.4)
   - ZXingObjC (3.6.5):
     - ZXingObjC/All (= 3.6.5)
@@ -120,7 +116,6 @@ DEPENDENCIES:
   - Reusable (~> 4.1)
   - SwiftGen (~> 6.1)
   - SwiftLint (~> 0.36.0)
-  - SwiftUTI (from `https://github.com/speramusinc/SwiftUTI.git`, branch `master`)
   - zxcvbn-ios
   - ZXingObjC (~> 3.6.5)
 
@@ -153,20 +148,14 @@ EXTERNAL SOURCES:
   MatrixSDK:
     :branch: xcode11
     :git: https://github.com/matrix-org/matrix-ios-sdk.git
-  SwiftUTI:
-    :branch: master
-    :git: https://github.com/speramusinc/SwiftUTI.git
 
 CHECKOUT OPTIONS:
   MatrixKit:
-    :commit: 1d11c01e97fdf89b5ed5ee457fce9a6552c3ef9a
+    :commit: 1620c93dd616619284c1590490128e51340e662d
     :git: https://github.com/matrix-org/matrix-ios-kit.git
   MatrixSDK:
-    :commit: f011e86db576d6c7e1425a72c19f93264e655ae4
+    :commit: a888b2dc21051b3a1e39028c18f4af7be1f4e4c8
     :git: https://github.com/matrix-org/matrix-ios-sdk.git
-  SwiftUTI:
-    :commit: b6b46942fb3aad819610851f62a70e17a528444e
-    :git: https://github.com/speramusinc/SwiftUTI.git
 
 SPEC CHECKSUMS:
   AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
@@ -181,17 +170,16 @@ SPEC CHECKSUMS:
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   MatomoTracker: 6f89e2561083685a360e223fb663e9ccd57c1d1a
-  MatrixKit: 3db15f216e2de4d53b1405434028d44f42d4af22
+  MatrixKit: fda041b3e22303efa8ce6ece85921ddf63bbe353
   MatrixSDK: 0e56c041cd0d452bc7e4dd119d4b6cb80cfbce91
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
-  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: fc9859e4e1752340664851f667bb1898b9c90114
-  SwiftUTI: 917993c124f8eac25e88ced0202fc58d7eb50fa8
   zxcvbn-ios: fef98b7c80f1512ff0eec47ac1fa399fc00f7e3c
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: d013efa2527a3b9c9c5b4fcdb71da066d5ec9701
+PODFILE CHECKSUM: 5c3ccbd15af06f211b6800f1289237cc5a8d2898
 
 COCOAPODS: 1.8.4

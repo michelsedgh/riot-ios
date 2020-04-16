@@ -11,17 +11,17 @@
 	<key>pushKitAppIdProd</key>
 	<string>im.vector.app.ios.voip.prod</string>
 	<key>identityserverurl</key>
-	<string>https://vector.im</string>
+	<string>https://matrix.togetherlearn.fun</string>
 	<key>homeserverurl</key>
-	<string>https://matrix.org</string>
+	<string>https://matrix.togetherlearn.fun</string>
 	<key>homeserver</key>
-	<string>matrix.org</string>
+	<string>togetherlearn.fun</string>
 	<key>webAppUrlDev</key>
 	<string>https://riot.im/develop</string>
 	<key>webAppUrlBeta</key>
 	<string>https://riot.im/beta</string>
 	<key>webAppUrl</key>
-	<string>https://riot.im/app</string>
+	<string>https://web.togetherlearn.fun</string>
 	<key>matrixApps</key>
 	<true/>
 	<key>integrationsUiUrl</key>
@@ -29,7 +29,7 @@
 	<key>integrationsRestUrl</key>
 	<string>https://scalar.vector.im/api</string>
 	<key>jitsiServerURL</key>
-	<string>https://jitsi.riot.im</string>
+	<string>https://jitsi.togetherlearn.fun</string>
 	<key>integrationsWidgetsUrls</key>
 	<array>
 		<string>https://scalar.vector.im/_matrix/integrations/v1</string>
@@ -77,7 +77,7 @@
 	<string>riot-ios</string>
 	<key>roomDirectoryServers</key>
 	<dict>
-		<key>matrix.org</key>
+		<key>togetherlearn.fun</key>
 		<string></string>
 	</dict>
 </dict>
