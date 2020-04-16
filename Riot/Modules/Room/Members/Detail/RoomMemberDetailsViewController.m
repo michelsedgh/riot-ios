@@ -244,7 +244,6 @@
         [self userInterfaceThemeDidChange];
         
     }];
-    [self userInterfaceThemeDidChange];
 }
 
 - (void)userInterfaceThemeDidChange
@@ -288,7 +287,9 @@
 
     // Screen tracking
     [[Analytics sharedInstance] trackScreen:@"RoomMemberDetails"];
-    
+
+    [self userInterfaceThemeDidChange];
+
     // Hide the bottom border of the navigation bar to display the expander header
     [self hideNavigationBarBorder:YES];
     
@@ -551,6 +552,7 @@
     }
 
     // Main Navigation bar opacity must follow
+    self.navigationController.navigationBar.translucent = isHidden;
     mainNavigationController.navigationBar.translucent = isHidden;
 }
 
